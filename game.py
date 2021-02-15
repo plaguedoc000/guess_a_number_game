@@ -16,17 +16,16 @@ def base_game():
             print('Победа.')
             print('Поздравляю, вы молодец.', 'Спасибо за внимание!\n')
             repeat()
-            break
         elif guess > number:
             print('Ваше число больше загаданного.\n')
             attempt += 1
         elif guess < number:
             print('Ваше число меньше загаданного.\n')
             attempt += 1
-    else:
-        print('Поражение')
-        print('Не беда, попробуйте еще.\n')
-        repeat()
+    
+    print('Поражение')
+    print('Не беда, попробуйте еще.\n')
+    repeat()
     
 def repeat():
     us_answ = input('Введите "more", если хотите сыграть еще: ')
